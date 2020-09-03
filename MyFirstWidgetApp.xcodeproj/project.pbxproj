@@ -11,7 +11,36 @@
 		ACE40686250135A600F7EB6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE40685250135A600F7EB6E /* ContentView.swift */; };
 		ACE40688250135A600F7EB6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE40687250135A600F7EB6E /* Assets.xcassets */; };
 		ACE4068B250135A600F7EB6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE4068A250135A600F7EB6E /* Preview Assets.xcassets */; };
+		ACE406992501366700F7EB6E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE406982501366700F7EB6E /* WidgetKit.framework */; };
+		ACE4069B2501366700F7EB6E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE4069A2501366700F7EB6E /* SwiftUI.framework */; };
+		ACE4069E2501366700F7EB6E /* HelloWorldWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4069D2501366700F7EB6E /* HelloWorldWidget.swift */; };
+		ACE406A02501366700F7EB6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE4069F2501366700F7EB6E /* Assets.xcassets */; };
+		ACE406A42501366700F7EB6E /* HelloWorldWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACE406962501366700F7EB6E /* HelloWorldWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACE406A22501366700F7EB6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACE40678250135A600F7EB6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE406952501366700F7EB6E;
+			remoteInfo = HelloWorldWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACE406A82501366700F7EB6E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ACE406A42501366700F7EB6E /* HelloWorldWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ACE40680250135A600F7EB6E /* MyFirstWidgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstWidgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +49,12 @@
 		ACE40687250135A600F7EB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE4068A250135A600F7EB6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACE4068C250135A600F7EB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE406962501366700F7EB6E /* HelloWorldWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HelloWorldWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE406982501366700F7EB6E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		ACE4069A2501366700F7EB6E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		ACE4069D2501366700F7EB6E /* HelloWorldWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldWidget.swift; sourceTree = "<group>"; };
+		ACE4069F2501366700F7EB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACE406A12501366700F7EB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +65,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACE406932501366700F7EB6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE4069B2501366700F7EB6E /* SwiftUI.framework in Frameworks */,
+				ACE406992501366700F7EB6E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				ACE40682250135A600F7EB6E /* MyFirstWidgetApp */,
+				ACE4069C2501366700F7EB6E /* HelloWorldWidget */,
+				ACE406972501366700F7EB6E /* Frameworks */,
 				ACE40681250135A600F7EB6E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				ACE40680250135A600F7EB6E /* MyFirstWidgetApp.app */,
+				ACE406962501366700F7EB6E /* HelloWorldWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +116,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		ACE406972501366700F7EB6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACE406982501366700F7EB6E /* WidgetKit.framework */,
+				ACE4069A2501366700F7EB6E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACE4069C2501366700F7EB6E /* HelloWorldWidget */ = {
+			isa = PBXGroup;
+			children = (
+				ACE4069D2501366700F7EB6E /* HelloWorldWidget.swift */,
+				ACE4069F2501366700F7EB6E /* Assets.xcassets */,
+				ACE406A12501366700F7EB6E /* Info.plist */,
+			);
+			path = HelloWorldWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +145,34 @@
 				ACE4067C250135A600F7EB6E /* Sources */,
 				ACE4067D250135A600F7EB6E /* Frameworks */,
 				ACE4067E250135A600F7EB6E /* Resources */,
+				ACE406A82501366700F7EB6E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ACE406A32501366700F7EB6E /* PBXTargetDependency */,
 			);
 			name = MyFirstWidgetApp;
 			productName = MyFirstWidgetApp;
 			productReference = ACE40680250135A600F7EB6E /* MyFirstWidgetApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ACE406952501366700F7EB6E /* HelloWorldWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE406A52501366700F7EB6E /* Build configuration list for PBXNativeTarget "HelloWorldWidgetExtension" */;
+			buildPhases = (
+				ACE406922501366700F7EB6E /* Sources */,
+				ACE406932501366700F7EB6E /* Frameworks */,
+				ACE406942501366700F7EB6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloWorldWidgetExtension;
+			productName = HelloWorldWidgetExtension;
+			productReference = ACE406962501366700F7EB6E /* HelloWorldWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +184,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					ACE4067F250135A600F7EB6E = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					ACE406952501366700F7EB6E = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -117,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				ACE4067F250135A600F7EB6E /* MyFirstWidgetApp */,
+				ACE406952501366700F7EB6E /* HelloWorldWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +217,14 @@
 			files = (
 				ACE4068B250135A600F7EB6E /* Preview Assets.xcassets in Resources */,
 				ACE40688250135A600F7EB6E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE406942501366700F7EB6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE406A02501366700F7EB6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +240,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACE406922501366700F7EB6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE4069E2501366700F7EB6E /* HelloWorldWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACE406A32501366700F7EB6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACE406952501366700F7EB6E /* HelloWorldWidgetExtension */;
+			targetProxy = ACE406A22501366700F7EB6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		ACE4068D250135A600F7EB6E /* Debug */ = {
@@ -265,6 +378,7 @@
 		ACE40690250135A600F7EB6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +401,7 @@
 		ACE40691250135A600F7EB6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +416,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hoge.com.MyFirstWidgetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACE406A62501366700F7EB6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AT74GMA56J;
+				INFOPLIST_FILE = HelloWorldWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hoge.com.MyFirstWidgetApp.HelloWorldWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACE406A72501366700F7EB6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AT74GMA56J;
+				INFOPLIST_FILE = HelloWorldWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hoge.com.MyFirstWidgetApp.HelloWorldWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +480,15 @@
 			buildConfigurations = (
 				ACE40690250135A600F7EB6E /* Debug */,
 				ACE40691250135A600F7EB6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE406A52501366700F7EB6E /* Build configuration list for PBXNativeTarget "HelloWorldWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE406A62501366700F7EB6E /* Debug */,
+				ACE406A72501366700F7EB6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
